@@ -1,0 +1,17 @@
+[debug] [2025-05-06T23:28:53.466Z] ----------------------------------------------------------------------
+[debug] [2025-05-06T23:28:53.482Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-05-06T23:28:53.485Z] CLI Version:   14.2.2
+[debug] [2025-05-06T23:28:53.485Z] Platform:      win32
+[debug] [2025-05-06T23:28:53.486Z] Node Version:  v20.17.0
+[debug] [2025-05-06T23:28:53.486Z] Time:          Tue May 06 2025 16:28:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2025-05-06T23:28:53.486Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-06T23:28:53.493Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-05-06T23:28:55.948Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-05-06T23:28:55.949Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-05-06T23:28:58.761Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:269:49)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[error] 
+[error] Error: An unexpected error has occurred.
