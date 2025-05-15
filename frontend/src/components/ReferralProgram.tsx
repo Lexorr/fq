@@ -13,8 +13,8 @@ const ReferralProgram = () => {
         {/* Two Column Grid: Text on Left, Image on Right */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left: Referral Program Details */}
-          <div className="flex flex-col justify-center items-start p-6 md:p-10">
-            <h2 className="text-2xl font-semibold mb-4">How It Works</h2>
+          <div className="flex flex-col justify-center items-start  md:p-10">
+            <h2 className="text-2xl font-semibold mb-4 md:px-4">How It Works</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-3">Step 1: Share Your Referral Link</h3>
