@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import bitcoin from '../assets/qrcodes/bitcoin.jpg';
+import usdt from '../assets/qrcodes/usdt.jpg'; // Adjust this path to your project
 import Swal from 'sweetalert2';
 import { getAuth } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
@@ -7,8 +8,12 @@ import { db } from '../../src/auth/firebase'; // Adjust this path to your projec
 
 const walletDetails = {
   bitcoin: {
-    address: 'bc1qv96mwt0ue6pd63qg5ssx23qusepthq4tepvvga',
+    address: '3Bg8JdE1hZkeLt3zSwJHLCGJLPKVbXcuhE',
     qrCode: bitcoin,
+  },
+  usdt: {
+    address: 'TKQ81CnXA4kssXbU9vxsw9YLZBHn6TezxZ',
+    qrCode: usdt,
   },
 };
 
@@ -159,6 +164,7 @@ const CryptoTransfer = () => {
             >
               <option value="" >-- Choose Wallet --</option>
               <option value="bitcoin">Bitcoin</option>
+              <option value="usdt">usdt</option>
             </select>
           </div>
         </div>
