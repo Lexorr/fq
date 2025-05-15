@@ -22,8 +22,8 @@ const NavBar = () => {
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
     isActive
-      ? 'text-emerald-600 font-semibold transition-all duration-300'
-      : 'text-blue-900 hover:text-emerald-600 transition-all duration-300';
+      ? 'text-emerald-600 font-semibold transition-all duration-300 '
+      : 'text-emerald-400 hover:text-emerald-600 transition-all duration-300';
 
   // Scroll Listener
   useEffect(() => {
@@ -42,8 +42,8 @@ const NavBar = () => {
 
   return (
     <div
-      className={`flex justify-between items-center px-6 py-4 fixed top-0 right-0 left-0 z-50 shadow-md transition-all duration-300 ${
-        isScrolled ? 'bg-white text-blue-900' : 'bg-transparent text-white'
+      className={`flex justify-between items-center  px-6 py-4 fixed top-0 right-0 left-0 z-50 shadow-md transition-all duration-300 ${
+        isScrolled ? 'bg-white text-black' : 'bg-transparent text-black'
       }`}
     >
       {/* Logo */}
@@ -89,7 +89,7 @@ const NavBar = () => {
         <button
           onClick={toggleMobileMenu}
           className={`text-3xl ${
-            isScrolled ? 'text-blue-900' : 'text-white'
+            isScrolled ? 'text-black' : 'text-black'
           }`}
           aria-label="Toggle mobile menu"
         >
