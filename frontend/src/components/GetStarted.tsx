@@ -4,7 +4,7 @@ const GetStarted = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6 md:p-20 bg-white">
       {/* Left Section */}
-      <div className="flex flex-col justify-center items-start p-6 md:p-10">
+      <div className="flex flex-col justify-center items-start ">
         <h1 className="text-3xl font-semibold mb-4">How To Get Started</h1>
         <h1 className="text-4xl font-bold mb-8">We have some easy steps!</h1>
 
