@@ -12,7 +12,7 @@ const Navbar2 = () => {
       {/* Right Section: User Avatar & Name */}
       <div className="flex items-center gap-4">
         {/* Avatar with Initials */}
-        <div className="w-10 h-10 mr-10 rounded-full bg-emerald-600 flex items-center justify-center text-white font-semibold text-sm">
+        <div className="w-10 h-10 mr-10 md:mr-0  rounded-full bg-emerald-600 flex items-center justify-center text-white font-semibold text-sm">
           {username.charAt(0).toUpperCase()}
         </div>
 
