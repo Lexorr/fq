@@ -16,7 +16,7 @@ const ContactSection1 = () => {
             <FiMapPin className="text-3xl text-blue-600" />
             <div className="text-center md:text-left">
               <h2 className="text-xl font-semibold">Headquarter</h2>
-              <p className="text-gray-600">123 Main Street, City</p>
+              <p className="text-gray-600">2345 Maple Street Springfield, IL 62704 USA</p>
             </div>
           </div>
 
