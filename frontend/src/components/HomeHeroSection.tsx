@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import bitcoin from '../assets/bitcoin.png';
-import bgImage from '../assets/hero-bg.jpg'; // Ensure your image is in the assets folder
+import bgImage from '../assets/hero-bg.jpeg'; // Ensure your image is in the assets folder
 
 const HomeHeroSection = () => {
   return (
