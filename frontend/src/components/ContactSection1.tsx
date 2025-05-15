@@ -8,9 +8,7 @@ const ContactSection1 = () => {
         <h1 className="text-3xl md:text-5xl font-bold my-2">
           Get in Touch With Uss
         </h1>
-        <p className="text-gray-600 mb-10">
-         
-        </p>
+        <p className="text-gray-600 mb-10"></p>
 
         <div className="space-y-8">
           {/* Location */}
@@ -18,9 +16,7 @@ const ContactSection1 = () => {
             <FiMapPin className="text-3xl text-blue-600" />
             <div className="text-center md:text-left">
               <h2 className="text-xl font-semibold">Headquarter</h2>
-              <p className="text-gray-600">
-              123 Main Street, City
-              </p>
+              <p className="text-gray-600">123 Main Street, City</p>
             </div>
           </div>
 
@@ -29,7 +25,10 @@ const ContactSection1 = () => {
             <FiPhone className="text-3xl text-blue-600" />
             <div className="text-center md:text-left">
               <h2 className="text-xl font-semibold">Call Us</h2>
-              <p className="text-gray-600">2024305139</p>
+              <div className='flex flex-col mt-2 md:flex-row gap-2'>
+                <p className="text-gray-600">+12604077679</p>
+                <p className="text-gray-600">+17868994961</p>
+              </div>
             </div>
           </div>
 
@@ -38,7 +37,7 @@ const ContactSection1 = () => {
             <FiMail className="text-3xl text-blue-600" />
             <div className="text-center md:text-left">
               <h2 className="text-xl font-semibold">Email Us</h2>
-              <p className="text-gray-600">support@truestoncapital.com</p>
+              <p className="text-gray-600">support@lexorventures.com</p>
             </div>
           </div>
         </div>
