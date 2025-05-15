@@ -1,5 +1,5 @@
 import { NavLink, Link } from 'react-router-dom';
-import { Home, PieChart, Settings, LogOut, Menu, X } from 'lucide-react';
+import { Home, PieChart, LogOut, Menu, X } from 'lucide-react';
 import logo from '../assets/logo3.png';
 import { useAuth } from '../context/useAuth';
 import { useState } from 'react';
