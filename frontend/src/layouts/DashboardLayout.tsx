@@ -10,7 +10,7 @@ const DashboardLayout = () => {
       <SideBar />
 
       <div className="flex flex-col flex-1 w-full md:ml-64 transition-all duration-300">
-        <main className="flex-1 p-4 md:p-6 bg-gray-100 min-h-screen">
+        <main className="flex-1 p-4 md:p-6  min-h-screen">
           <ScrollToTop />
           <Navbar2 />
           <Outlet />
