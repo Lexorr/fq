@@ -1,4 +1,9 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,7 +13,8 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-xl font-semibold mb-4">About Us</h3>
           <p className="text-sm">
-            We are a reliable investment platform offering secure and profitable plans tailored to your financial goals.
+            We are a reliable investment platform offering secure and profitable
+            plans tailored to your financial goals.
           </p>
         </div>
 
@@ -16,10 +22,26 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:underline">Home</a></li>
-            <li><a href="/about" className="hover:underline">About</a></li>
-            <li><a href="/packages" className="hover:underline">Investment Plans</a></li>
-            <li><a href="/contact" className="hover:underline">Contact</a></li>
+            <li>
+              <a href="/" className="hover:underline">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/about" className="hover:underline">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/packages" className="hover:underline">
+                Investment Plans
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="hover:underline">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -27,9 +49,9 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-xl font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-sm">
-            <li>Email: support@truestoncapital.com </li>
-            <li>Phone: 2024305139</li>
-            <li>Address: 123 Main Street, City</li>
+            <li>Email: support@lexorventures.com </li>
+            <li>Phone: +17868994961</li>
+            <li>Address: 2345 Maple Street Springfield, IL 62704 USA</li>
           </ul>
         </div>
 
@@ -37,18 +59,25 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-xl font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4 text-lg">
-            <a href="#" className="hover:text-white"><FaFacebookF /></a>
-            <a href="#" className="hover:text-white"><FaTwitter /></a>
-            <a href="#" className="hover:text-white"><FaInstagram /></a>
-            <a href="#" className="hover:text-white"><FaLinkedinIn /></a>
+            <a href="#" className="hover:text-white">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="hover:text-white">
+              <FaTwitter />
+            </a>
+            <a href="#" className="hover:text-white">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-white">
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
       <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-      © 2024 truestoncapital. All rights reserved.
-
+        © 2024 lexorventures. All rights reserved.
       </div>
     </footer>
   );
