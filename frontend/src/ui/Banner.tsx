@@ -8,7 +8,7 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ title, subtitle, image }) => {
   return (
-    <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 py-10 flex flex-col md:flex-row items-center justify-between mt-15">
+    <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 py-10 flex flex-col md:flex-row items-center justify-between mt-20">
       {/* Text Section */}
       <div className="text-center md:text-left">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">{title}</h1>
