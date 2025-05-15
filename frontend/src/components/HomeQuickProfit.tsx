@@ -20,9 +20,8 @@ const HomeQuickProfit = () => {
       pro: 0.2,
     };
 
-    // Using the plan type to ensure we are accessing a valid key
-    const planRate = rates[plan]; 
-    const totalRate = planRate + 0.5; // Add 50% extra profit
+    const planRate = rates[plan];
+    const totalRate = planRate + 0.5;
     const profitAmount = amountNum * totalRate;
     setProfit(profitAmount.toFixed(2));
   };
@@ -37,19 +36,15 @@ const HomeQuickProfit = () => {
           Profit Calculator
         </h1>
         <h1 className="text-4xl font-bold mb-4">Quick Profit Calculate</h1>
-        <p className="text-[20px] mt-4 ">
-         
-        </p>
 
-        <div className="space-y-6 mt-10">
-          <div className="flex flex-col">
-            <label htmlFor="plan" className="mb-2 ">
+        <div className="space-y-8 mt-10">
+          <div className="flex flex-col relative">
+            <label htmlFor="plan" className="mb-2 font-medium text-gray-500">
               Select Plan
             </label>
             <select
-              name="plan"
               id="plan"
-              className="p-2 border rounded  bg-gray-200"
+              className="p-3 border border-gray-300 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent transition-all"
               value={plan}
               onChange={(e) => setPlan(e.target.value as "basic" | "standard" | "premium" | "pro")}
             >
@@ -60,29 +55,29 @@ const HomeQuickProfit = () => {
             </select>
           </div>
 
-          <div className="flex flex-col">
-            <label htmlFor="amountInput" className="mb-2 ">
+          <div className="flex flex-col relative">
+            <label htmlFor="amountInput" className="mb-2 font-medium text-gray-500">
               Enter Amount
             </label>
             <input
               id="amountInput"
               type="number"
               placeholder="0.00"
-              className="p-2 border rounded  bg-gray-200"
+              className="p-3 border border-gray-300 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent transition-all"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
             />
           </div>
 
-          <div className="flex flex-col">
-            <label htmlFor="profit" className="mb-2 ">
+          <div className="flex flex-col relative">
+            <label htmlFor="profit" className="mb-2 font-medium text-gray-500">
               Profit Amount
             </label>
             <input
               id="profit"
               type="text"
               placeholder="0.00"
-              className="p-2 border rounded bg-gray-700 text-gray-300"
+              className="p-3 border border-gray-700 rounded-md bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent transition-all"
               value={profit}
               readOnly
             />
@@ -90,7 +85,7 @@ const HomeQuickProfit = () => {
 
           <button
             onClick={calculateProfit}
-            className="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2 px-4 rounded-full shadow-lg"
+            className="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-transform hover:scale-105"
           >
             Calculate Now
           </button>
