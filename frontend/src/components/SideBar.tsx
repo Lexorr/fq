@@ -71,12 +71,12 @@ const SideBar = () => {
               icon={<Home size={18} />}
               onClick={handleLinkClick}
             />
-            <NavItem
+            {/* <NavItem
               to="/dashboard/setting"
               label="Settings"
               icon={<Settings size={18} />}
               onClick={handleLinkClick}
-            />
+            /> */}
           </div>
         </div>
 
