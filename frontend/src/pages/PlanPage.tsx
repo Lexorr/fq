@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Banner from '../ui/Banner';
-import bitcoin from '../assets/bitcoin.png';
+
 
 
 const PlanPage = () => {
@@ -54,7 +54,7 @@ const PlanPage = () => {
       <Banner
         title="Plan"
         subtitle="Flexible pricing options to suit your needs."
-        image={bitcoin} />
+        />
         <div><div className="py-20 px-6 md:px-20 bg-white">
               <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">
                 Best Investment Packages
