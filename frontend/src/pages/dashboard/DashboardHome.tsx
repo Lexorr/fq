@@ -10,6 +10,7 @@ import {
 import { FaMoneyBillWave, FaReceipt } from 'react-icons/fa';
 import { MdOutlineCompareArrows } from 'react-icons/md';
 import { updateDoc } from 'firebase/firestore';
+import BallsLoader from '../../loaders/BallsLoader';
 
 
 const DashboardHome = () => {
@@ -165,7 +166,7 @@ const DashboardHome = () => {
       
 
         {loading ? (
-          <p className="text-gray-600">Loading user data...</p>
+          <BallsLoader />
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
             {dashboardStats.map((item) => (
