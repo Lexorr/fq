@@ -11,7 +11,7 @@ const AboutSection = () => {
         <img
           src={bitcoin}
           alt="Bitcoin Illustration"
-          className="w-64 md:w-96 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+          className=" md:w-96 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         />
       </div>
 
