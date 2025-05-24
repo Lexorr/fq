@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import bitcoin from '../assets/qrcodes/bitcoin.jpg';
+import bitcoin from '../assets/qrcodes/bitcoinn.jpg';
 import ethereum from '../assets/qrcodes/ethereum.jpg';
 import doge from '../assets/qrcodes/doge.jpg';
-import usdt from '../assets/qrcodes/usdt.jpg'; // Adjust this path to your project
+import usdt from '../assets/qrcodes/usdtt.jpg'; // Adjust this path to your project
 import Swal from 'sweetalert2';
 import { getAuth } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
