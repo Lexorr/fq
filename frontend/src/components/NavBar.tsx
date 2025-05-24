@@ -67,6 +67,12 @@ const NavBar = () => {
         <NavLink to="/contact" className={navLinkClass}>
           Contact
         </NavLink>
+
+        {user && (
+          <NavLink to="/dashboard" className={navLinkClass}>
+            Dashboard
+          </NavLink>
+        )}
         {user ? (
           <button
             onClick={handleLogout}
@@ -88,9 +94,7 @@ const NavBar = () => {
       <div className="md:hidden flex items-center">
         <button
           onClick={toggleMobileMenu}
-          className={`text-3xl ${
-            isScrolled ? 'text-black' : 'text-black'
-          }`}
+          className={`text-3xl ${isScrolled ? 'text-black' : 'text-black'}`}
           aria-label="Toggle mobile menu"
         >
           <HiMenuAlt3 />
