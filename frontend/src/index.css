@@ -1,6 +1,15 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
 
 
+*{
+font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 @keyframes fade-in-up {
     from {
@@ -16,3 +25,8 @@
   .animate-fade-in-up {
     animation: fade-in-up 1s ease-out forwards;
   }
+
+  
+.roboto {
+  
+}
