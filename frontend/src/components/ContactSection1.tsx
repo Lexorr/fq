@@ -26,8 +26,8 @@ const ContactSection1 = () => {
             <div className="text-center md:text-left">
               <h2 className="text-xl font-semibold">Call Us</h2>
               <div className='flex flex-col mt-2 md:flex-row gap-2'>
-                <p className="text-gray-600">+12604077679</p>
-                <p className="text-gray-600">+17868994961</p>
+                <p className="text-gray-600">+4429467979</p>
+              
               </div>
             </div>
           </div>
