@@ -50,7 +50,7 @@ const Footer = () => {
           <h3 className="text-white text-xl font-semibold mb-4">Contact</h3>
           <ul className="space-y-2 text-sm">
             <li>Email: support@lexorventures.com </li>
-            <li>Phone: +17868994961</li>
+            <li>Phone: +4429467979</li>
             <li>Address: 2345 Maple Street Springfield, IL 62704 USA</li>
           </ul>
         </div>
