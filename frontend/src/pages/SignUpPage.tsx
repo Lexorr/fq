@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 import { AuthContext } from '../context/AuthContext';
 
@@ -17,23 +18,32 @@ const SignUpPage: React.FC = () => {
     setError('');
 
     if (!register) {
-      setError("Register function is not available.");
+      setError('Register function is not available.');
       return;
     }
 
     if (password !== confirmPassword) {
-      setError("Passwords do not match.");
+      setError('Passwords do not match.');
       return;
     }
 
     try {
       await register(email, password, fullName);
-      navigate('/login');
+
+      // Show success popup
+      Swal.fire({
+        icon: 'success',
+        title: 'Sign Up Complete',
+        text: 'Your account has been created successfully!',
+        confirmButtonColor: '#10b981',
+      }).then(() => {
+        navigate('/login');
+      });
     } catch (err: unknown) {
       if (err instanceof Error) {
         setError(err.message);
       } else {
-        setError("An unexpected error occurred.");
+        setError('An unexpected error occurred.');
       }
     }
   };
@@ -43,13 +53,19 @@ const SignUpPage: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-1 gap-8 bg-white/70 backdrop-blur-lg rounded-3xl shadow-xl overflow-hidden w-full max-w-5xl">
         <div className="p-8 md:p-10 flex flex-col justify-center">
           <div className="mb-8 text-center md:text-left">
-            <h1 className="text-3xl font-bold text-gray-800">Create Your Account</h1>
-            <p className="text-gray-500 mt-1">Join Lexor Ventures and start growing</p>
+            <h1 className="text-3xl font-bold text-gray-800">
+              Create Your Account
+            </h1>
+            <p className="text-gray-500 mt-1">
+              Join Lexor Ventures and start growing
+            </p>
           </div>
 
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Full Name
+              </label>
               <input
                 type="text"
                 placeholder="John Doe"
@@ -60,7 +76,9 @@ const SignUpPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Email Address
+              </label>
               <input
                 type="email"
                 placeholder="you@example.com"
@@ -71,7 +89,9 @@ const SignUpPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Password
+              </label>
               <input
                 type="password"
                 placeholder="Enter a strong password"
@@ -82,7 +102,9 @@ const SignUpPage: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Confirm Password
+              </label>
               <input
                 type="password"
                 placeholder="Re-type your password"
@@ -109,8 +131,6 @@ const SignUpPage: React.FC = () => {
             </Link>
           </p>
         </div>
-
-        
       </div>
     </div>
   );
