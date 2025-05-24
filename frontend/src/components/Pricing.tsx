@@ -9,7 +9,7 @@ const Pricing = () => {
       duration: '14 Days',
       features: ['Account Manager', 'Quick Support'],
       bg: '',
-      buttonBg: 'bg-black',
+      buttonBg: 'bg-emerald-600',
       buttonHover: 'hover:bg-green-500',
     },
     {
@@ -19,7 +19,7 @@ const Pricing = () => {
       duration: '20 Days',
       features: ['Priority Withdrawal', 'Referral Earnings'],
       bg: '',
-      buttonBg: 'bg-black',
+      buttonBg: 'bg-emerald-600',
       buttonHover: 'hover:bg-green-500',
     },
     {
@@ -29,7 +29,7 @@ const Pricing = () => {
       duration: '30 Days',
       features: ['VIP Support', 'Bonus Offers'],
       bg: '',
-      buttonBg: 'bg-black',
+      buttonBg: 'bg-emerald-600',
       buttonHover: 'hover:bg-green-500',
     },
     {
@@ -39,7 +39,7 @@ const Pricing = () => {
       duration: '40 Days',
       features: ['Dedicated Advisor', 'Premium Returns'],
       bg: '',
-      buttonBg: 'bg-black',
+      buttonBg: 'bg-emerald-600',
       buttonHover: 'hover:bg-green-500',
     },
     
