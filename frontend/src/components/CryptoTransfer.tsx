@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import bitcoin from '../assets/qrcodes/bitcoin.jpg';
+import ethereum from '../assets/qrcodes/ethereum.jpg';
+import doge from '../assets/qrcodes/doge.jpg';
 import usdt from '../assets/qrcodes/usdt.jpg'; // Adjust this path to your project
 import Swal from 'sweetalert2';
 import { getAuth } from 'firebase/auth';
@@ -8,13 +10,22 @@ import { db } from '../../src/auth/firebase'; // Adjust this path to your projec
 
 const walletDetails = {
   bitcoin: {
-    address: '3Bg8JdE1hZkeLt3zSwJHLCGJLPKVbXcuhE',
+    address: '1FFXpcB72wbJojTHiKLsQvmuQgpzCxLeqR',
     qrCode: bitcoin,
   },
   usdt: {
-    address: 'TKQ81CnXA4kssXbU9vxsw9YLZBHn6TezxZ',
+    address: 'TQj7kwjnLpmCCXM2sxH72EB9qSP5UwuPun',
     qrCode: usdt,
   },
+   eth: {
+    address: '0xe68de6e7d9a0995121d691d79d02c521733c172f',
+    qrCode: ethereum,
+  },
+   doge: {
+    address: 'DU5URhkHgaL58pA7yWNtYDLKudhyNQ5Bjy',
+    qrCode: doge,
+  },
+  
 };
 
 const CryptoTransfer = () => {
@@ -164,7 +175,9 @@ const CryptoTransfer = () => {
             >
               <option value="" >-- Choose Wallet --</option>
               <option value="bitcoin">Bitcoin</option>
-              <option value="usdt">usdt</option>
+              <option value="usdt">Usdt</option>
+              <option value="eth">Ethereum</option>
+              <option value="doge">Doge</option>
             </select>
           </div>
         </div>
