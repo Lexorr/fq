@@ -12,9 +12,9 @@ const PlanPage = () => {
       profit: '10%',
       duration: '14 Days',
       features: ['Account Manager', 'Quick Support'],
-      bg: 'bg-gray-200',
-      buttonBg: 'bg-black',
-      buttonHover: 'hover:bg-blue-500',
+      bg: '',
+      buttonBg: 'bg-emerald-600',
+      buttonHover: 'hover:bg-green-500',
     },
     {
       name: 'Advanced Plan',
@@ -22,9 +22,9 @@ const PlanPage = () => {
       profit: '12%',
       duration: '20 Days',
       features: ['Priority Withdrawal', 'Referral Earnings'],
-      bg: 'bg-gray-200',
-      buttonBg: 'bg-black',
-      buttonHover: 'hover:bg-blue-500',
+      bg: '',
+      buttonBg: 'bg-emerald-600',
+      buttonHover: 'hover:bg-green-500',
     },
     {
       name: 'Premium Plan',
@@ -32,9 +32,9 @@ const PlanPage = () => {
       profit: '15%',
       duration: '30 Days',
       features: ['VIP Support', 'Bonus Offers'],
-      bg: 'bg-gray-200',
-      buttonBg: 'bg-black',
-      buttonHover: 'hover:bg-blue-500',
+      bg: '',
+      buttonBg: 'bg-emerald-600',
+      buttonHover: 'hover:bg-green-500',
     },
     {
       name: 'Elite Plan',
@@ -42,11 +42,11 @@ const PlanPage = () => {
       profit: '18%',
       duration: '40 Days',
       features: ['Dedicated Advisor', 'Premium Returns'],
-      bg: 'bg-gray-200',
-      buttonBg: 'bg-black',
-      buttonHover: 'hover:bg-blue-500',
+      bg: '',
+      buttonBg: 'bg-emerald-600',
+      buttonHover: 'hover:bg-green-500',
     },
-   
+    
   ];
 
   return (
