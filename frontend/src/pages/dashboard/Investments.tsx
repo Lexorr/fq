@@ -2,48 +2,48 @@ import { Link } from 'react-router-dom';
 import PageHeader from '../../ui/PageHeader';
 
 const packages = [
-  {
-    name: 'Standard Plan',
-    price: '$1,000',
-    profit: '10%',
-    duration: '14 Days',
-    features: ['Account Manager', 'Quick Support'],
-    bg: 'bg-gray-200',
-    buttonBg: 'bg-black',
-    buttonHover: 'hover:bg-yellow-500',
-  },
-  {
-    name: 'Advanced Plan',
-    price: '$2,000',
-    profit: '12%',
-    duration: '20 Days',
-    features: ['Priority Withdrawal', 'Referral Earnings'],
-    bg: 'bg-gray-200',
-    buttonBg: 'bg-black',
-    buttonHover: 'hover:bg-purple-500',
-  },
-  {
-    name: 'Premium Plan',
-    price: '$5,000',
-    profit: '15%',
-    duration: '30 Days',
-    features: ['VIP Support', 'Bonus Offers'],
-    bg: 'bg-gray-200',
-    buttonBg: 'bg-black',
-    buttonHover: 'hover:bg-pink-500',
-  },
-  {
-    name: 'Elite Plan',
-    price: '$10,000',
-    profit: '18%',
-    duration: '40 Days',
-    features: ['Dedicated Advisor', 'Premium Returns'],
-    bg: 'bg-gray-200',
-    buttonBg: 'bg-black',
-    buttonHover: 'hover:bg-indigo-500',
-  },
-  
-];
+    {
+      name: 'Standard Plan',
+      price: '$1,000',
+      profit: '10%',
+      duration: '14 Days',
+      features: ['Account Manager', 'Quick Support'],
+      bg: '',
+      buttonBg: 'bg-black',
+      buttonHover: 'hover:bg-green-500',
+    },
+    {
+      name: 'Advanced Plan',
+      price: '$2,000',
+      profit: '12%',
+      duration: '20 Days',
+      features: ['Priority Withdrawal', 'Referral Earnings'],
+      bg: '',
+      buttonBg: 'bg-black',
+      buttonHover: 'hover:bg-green-500',
+    },
+    {
+      name: 'Premium Plan',
+      price: '$5,000',
+      profit: '15%',
+      duration: '30 Days',
+      features: ['VIP Support', 'Bonus Offers'],
+      bg: '',
+      buttonBg: 'bg-black',
+      buttonHover: 'hover:bg-green-500',
+    },
+    {
+      name: 'Elite Plan',
+      price: '$10,000',
+      profit: '18%',
+      duration: '40 Days',
+      features: ['Dedicated Advisor', 'Premium Returns'],
+      bg: '',
+      buttonBg: 'bg-black',
+      buttonHover: 'hover:bg-green-500',
+    },
+    
+  ];
 
 const Investments = () => {
   return (
