@@ -142,7 +142,11 @@ const NavBar = () => {
             >
               Contact
             </NavLink>
-
+            {user && (
+              <NavLink to="/dashboard" className={navLinkClass}>
+                Dashboard
+              </NavLink>
+            )}
             {user ? (
               <button
                 onClick={handleLogout}
